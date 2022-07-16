@@ -6,7 +6,9 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           sh 'echo "Installing Dependencies..."'
+          sh 'echo "Installing Dependencies..."'
+          sh 'uptime'
+          sh 'hostname'
         }
      }
      
